@@ -43,16 +43,16 @@ dino_data %>%
 ### Exercise 3
 
 Add code and narrative as needed.
-Note that the R chunks are labelled with `plot-star` and `cor-star` to provide spaces to place the code for plotting and calculating the correlation coefficient.
+Note that the R chunks are labeled with `plot-star` and `cor-star` to provide spaces to place the code for plotting and calculating the correlation coefficient.
 To finish, clean up the narrative by removing these instructions.
 
-Blah blah blah...
+
 
 ```{r plot-star}
 
 ```
 
-I'm some text, you should replace me with more meaningful text...
+I'm some filler text, you should replace me with more meaningful text...
 
 ```{r cor-star}
 
@@ -75,4 +75,5 @@ Use the convention from above to name them appropriately.
 ### Exercise 5
 
 Add code and narrative as needed.
+
 To add R chunks either type out the backticks, curly braces, and the letter `r` or use the Insert chunk button above, green C+.
