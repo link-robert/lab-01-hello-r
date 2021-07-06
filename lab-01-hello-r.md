@@ -1,7 +1,7 @@
 Lab 01 - Hello R
 ================
-Insert your name here
-Insert date here
+Robert Link
+07/05/2021
 
 ## Load packages and data
 
@@ -48,14 +48,12 @@ dino_data %>%
 
 ### Exercise 3
 
-Add code and narrative as needed. Note that the R chunks are labelled
+Add code and narrative as needed. Note that the R chunks are labeled
 with `plot-star` and `cor-star` to provide spaces to place the code for
 plotting and calculating the correlation coefficient. To finish, clean
 up the narrative by removing these instructions.
 
-Blah blah blah…
-
-I’m some text, you should replace me with more meaningful text…
+I’m some filler text, you should replace me with more meaningful text…
 
 ### Exercise 4
 
@@ -65,6 +63,7 @@ appropriately.
 
 ### Exercise 5
 
-Add code and narrative as needed. To add R chunks either type out the
-backticks, curly braces, and the letter `r` or use the Insert chunk
-button above, green C+.
+Add code and narrative as needed.
+
+To add R chunks either type out the backticks, curly braces, and the
+letter `r` or use the Insert chunk button above, green C+.
