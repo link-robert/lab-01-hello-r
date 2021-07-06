@@ -77,9 +77,30 @@ star_data %>%
 
 ### Exercise 4
 
-Add code and narrative as needed. Note that two R chunks are given but
-they are not labeled. Use the convention from above to name them
-appropriately.
+Now we do the exact same thing to the circle dataset.
+
+``` r
+circle_data <- datasaurus_dozen %>%
+  filter(dataset == "circle")
+
+ggplot(data = circle_data, mapping = aes(x = x, y = y)) +
+  geom_point()
+```
+
+![](lab-01-hello-r_files/figure-gfm/plot-circle-1.png)<!-- -->
+
+``` r
+circle_data %>%
+  summarize(r = cor(x, y))
+```
+
+    ## # A tibble: 1 x 1
+    ##         r
+    ##     <dbl>
+    ## 1 -0.0683
+
+Notice now that the correlations are not identical, but are reasonably
+close for the three data sets explored: `dino`, `star`, and `circle`.
 
 ### Exercise 5
 
