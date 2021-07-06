@@ -20,10 +20,6 @@ The three variables are: `dataset`,`x-values`, and `y-values`.
 
 ### Exercise 2
 
-The answers for this Exercise are given for you below. But you should
-clean up some of the narrative so that it only includes what you want to
-turn in.
-
 First let’s plot the data in the dino dataset:
 
 ``` r
@@ -104,7 +100,44 @@ close for the three data sets explored: `dino`, `star`, and `circle`.
 
 ### Exercise 5
 
-Add code and narrative as needed.
+Now we plot all 13 datasets.
 
-To add R chunks either type out the backticks, curly braces, and the
-letter `r` or use the Insert chunk button above, green C+.
+``` r
+ggplot(datasaurus_dozen, aes(x = x, y = y, color = dataset))+
+  geom_point()+
+  facet_wrap(~ dataset, ncol = 5) +
+  theme(legend.position = "none")
+```
+
+![](lab-01-hello-r_files/figure-gfm/plot-all-1.png)<!-- -->
+
+And we produce all correlations.
+
+``` r
+datasaurus_dozen %>%
+  group_by(dataset) %>%
+  summarize(r = cor(x, y)) %>%
+  print(13)
+```
+
+    ## # A tibble:
+    ## #   13 x 2
+    ##    dataset   
+    ##    <chr>     
+    ##  1 away      
+    ##  2 bullseye  
+    ##  3 circle    
+    ##  4 dino      
+    ##  5 dots      
+    ##  6 h_lines   
+    ##  7 high_lines
+    ##  8 slant_down
+    ##  9 slant_up  
+    ## 10 star      
+    ## 11 v_lines   
+    ## 12 wide_lines
+    ## 13 x_shape   
+    ## # ... with 1
+    ## #   more
+    ## #   variable:
+    ## #   r <dbl>
